@@ -97,11 +97,19 @@
                         <h1>Continuando con el ejemplo...</h1>
                         <p>El controlador se creó para enrutarlo. <br>
                             En <strong>routes\web.php</strong> lo enrutamos así:</p>
-                            <div class="codigo">
-                                <p>Route::get('inicio','EjemploContro@inicio');</p>
-                            </div>
-                            <p>Indicamos el controlador y luego, separado de un <strong>@</strong>, <br>
+                        <div class="codigo">
+                            <p>Route::get('inicio','EjemploContro@inicio');</p>
+                        </div>
+                        <p>Indicamos el controlador y luego, separado de un <strong>@</strong>, <br>
                             agregamos el metodo a ser usado</p>
+                        <h1>Parametros</h1>
+                        <p>el parametro se lo pasamos desde la url y el metodo debe estar preparado para recibir un
+                            parametro <br>
+                            ej: <strong>public sumar(parametro)</strong></p>
+                        <p>código ejemplo:</p>
+                        <div class="codigo">
+                            <p>Route:get('/inicio/{num}','Controlador@sumar');</p>
+                        </div>
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
                         <h1>De forma automatica</h1>
@@ -112,12 +120,41 @@
                         <hr>
                         <p>para crear un controlador con recursos/metodos create, index,edit... etc</p>
                         <div class="cmd">php artisan make:controller --resource Ejemplo3</div>
-                 <p>Llegar y utilizar/agregar returns</p>
+                        <p>Llegar y utilizar/agregar returns</p>
                     </div>
                 </div>
             </div>
 
 
+
+
+
+
+            <div class="hero-section vistas     ">
+                <h1 class="titulos">Vistas</h1>
+                <div class="columns  ">
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                  <p>Las vistas se encuentran en <strong>resources/views</strong> </p>
+                    </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                  
+                    </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="hero-section">
+
+                <div class="foot-pag centrar-texto">
+                    <p>Páginas de estudio | Franco Bernal</p>
+                </div>
+
+            </div>
 
 
 

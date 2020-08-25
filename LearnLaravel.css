@@ -71,6 +71,9 @@ p {
     border-right: 1px dashed rgba(255, 217, 0, 0.438);
     margin: 0px;
 }
+.column {
+height: auto;
+}
 
 .titulos {
     font-size: 40px;
@@ -84,7 +87,7 @@ p {
 .rutas {
     background: rgb(0, 0, 0);
     background-image: url(https://image.freepik.com/vector-gratis/fondo-particulas-tecnologia-realista-abstracta_23-2148420656.jpg);
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     color: blanchedalmond;
     height: auto;

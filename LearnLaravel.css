@@ -69,6 +69,9 @@
     font-family: monospace;
     font-size: 14px;
 }
+.nota{
+    font-size: 8px;
+}
 
 strong {
     color: white;

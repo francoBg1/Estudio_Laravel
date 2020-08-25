@@ -136,13 +136,13 @@
                             <p>Route::resource("posts","controladorEjemplo");</p>
                         </div>
                         <p>primero creamos el nombre y despues agregamos el metodo a cuál entrar.</p>
-                      <p>Para los que tengan parametros, consultar la lista de rutas:</p>
+                        <p>Para los que tengan parametros, consultar la lista de rutas:</p>
                         <div class="cmd">
                             <p>$php artisan route:list</p>
                         </div>
-                      <!--CONTENT-->
+                        <!--CONTENT-->
                     </div>
-                   
+
                 </div>
             </div>
 
@@ -180,17 +180,27 @@
                 <h1 class="titulos">Blade</h1>
                 <div class="columns  ">
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-               <p>Al crear la plantilla en <strong>views</strong> la extención debe llevar <br> la extención <strong>blade.php</strong></p>
-           <h1>identificar la zona</h1>
-           <p>se usa <strong>@yield("identificacion")</strong> en una seccion elejida de la plantilla para ser llamado desde cualquier lado</p>        
-            
-            
-            </div>
-                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                 CONTENT
+                        <p>Al crear la plantilla en <strong>views</strong> la extención debe llevar <br> la extención
+                            <strong>blade.php</strong></p>
+                        <h1>identificar la zona</h1>
+                        <p>se coloca <strong>@yield("identificacion1")</strong> en una seccion de la plantilla para
+                            desplegar ahí la seccion creada</p>
+                        <h1>Crear la plantilla</h1>
+                        <p>para enviar los datos <strong>@extends(layouts.nombreArchivo)</strong></p>
+                        <h1>Crear la sección</h1>
+                        <div class="codigo">
+                            <p>@section("identificacion1") <br>
+                                codigo <br>
+                                @endsection</p>
+                        </div>
+                        <p>El código a ser usado en la plantilla principal, debera ser encerrado en las etiquetas
+                            <strong>@section</strong></p>
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                  CONTENT
+                        CONTENT
+                    </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        CONTENT
                     </div>
                 </div>
             </div>
@@ -201,14 +211,26 @@
             <div class="hero-section">
                 <div class="comandos">
                     <h1>(text)comandos utiles</h1>
-                    <p>composer create-project laravel/laravel mi-proyecto-laravel</p>
-                    <p>php artisan serve</p>
+                    <p class="nota">Para crear el proyecto</p>
+                    <p>$composer create-project laravel/laravel mi-proyecto-laravel</p>
+                 
+                    <p class="nota">Para desplegar</p>
+                    <p>$php artisan serve</p>
+                   
+                    <p class="nota">---------------</p>
+                    <p class="nota">lista de rutas</p>
                     <p>$php artisan route:list</p>
+                   
+                    <p class="nota">crear controladores con o sin recursos</p>
                     <p>$php artisan make:controller ejemplo2</p>
                     <p>$php artisan make:controller --resource Ejemplo3</p>
                 </div>
                 <div class="foot-pag centrar-texto">
-                    <p>Páginas de estudio | Franco Bernal</p>
+                    <div>
+                        <p>Páginas de estudio | Franco Bernal <br></p>
+                        <p class="nota">25/08/2020</p>
+                    </div>
+
                 </div>
 
             </div>

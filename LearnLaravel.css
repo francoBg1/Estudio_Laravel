@@ -1,0 +1,102 @@
+.hero {
+    height: auto;
+}
+
+.hero-header {
+    background: rgb(156, 104, 104);
+    height: 70px;
+}
+
+.hero-header h1 {
+    font-size: 30px;
+    color: honeydew;
+}
+
+.heero-section {
+    border-bottom: 1px dashed burlywood;
+}
+
+.hero-body {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+.centrar-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m {
+    border: 1px dashed burlywood;
+}
+
+.codigo {
+    background: rgba(255, 0, 0, 0.199);
+    color: greenyellow;
+    border:1px dashed  rgb(255, 0, 0);
+    width: max-content;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(10px); 
+
+}
+
+strong {
+    color: white;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.columns {
+    border-right: 1px dashed rgba(255, 217, 0, 0.438);
+    margin: 0px;
+}
+
+/*------------------*/
+
+.rutas {
+    background: rgb(0, 0, 0);
+    background-image: url(https://image.freepik.com/vector-gratis/fondo-particulas-tecnologia-realista-abstracta_23-2148420656.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: blanchedalmond;
+    height: auto;
+
+}
+
+.rutas div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .codigo {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio | laravel</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="LearnLaravel.css">
+</head>
+
+<body>
+    <!--is-gapless  is-multiline-->
+    <!--is-6-desktop  is-12-tablet  is-12-mobile-->
+    <div class="hero">
+
+        <div class="hero-header centrar-texto">
+            <h1>Estudio | laravel</h1>
+        </div>
+
+
+        <div class="hero-body">
+            <div class="hero-section rutas     ">
+                <div class="columns  ">
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        <h1>rutas:</h1>
+                        <div class="codigo">
+                            <p>Route::get('/rutaquequiera', function(){ <br>
+                                //return view('welcome'); <br>
+                                });</p>
+                        </div>
+
+                        <p>en <strong>/ruta</strong> puede llamarse como sea, eso define el nombre de la ruta <br>
+                            lo que la define, es lo que está en la funcion anónima, return view <br>
+                            se puede poner: <br>
+                            <strong>return "cualquier cosa";</strong> </p>
+                        <br>
+                    </div>
+
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        <h1>pasar parametros</h1>
+                        <div class="codigo">
+                            <p>Route::get('/ruta/{id}', function($id){ <br>
+                                //return "se ha pasado el parametro: " . $id; <br>
+                                });</p>
+                        </div>
+                        <p>solo se agrega entre <strong>{ }</strong> el parametro y despues se pasa a la funcion</p>
+                        <p>así mismo, se pueden pasar varios parametros</p>
+                        <div class="codigo">
+                            <p>Route::get('/ruta/{id}/{otro}', function($id,$otro){ <br>
+                                //return "se ha pasado el parametro: " . $id; <br>
+                                });</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        <h1>Expresiones regulares</h1>
+                        <p>para agregar expresiones regulares basta con colocalas al final y referirse al parametro</p>
+                        <div class="codigo">
+                            <p>Route::get('/ruta/{id}', function($id){ <br>
+                                //return "se ha pasado el parametro: " . $id; <br>
+                                })->where('nombre','[a-zA-Z]+');</p>
+                        </div>
+                    <hr>
+                    <p>Las rutas, se encuentran en <strong>routes/web.php</strong> </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

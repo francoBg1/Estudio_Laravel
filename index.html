@@ -129,7 +129,7 @@
             <div class="hero-section controladores     ">
                 <h1 class="titulos">Controladores con resources</h1>
                 <div class="columns  ">
-                    <div class="column is-12-fullhd is-12-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                    <div class="column is-4-fullhd is-12-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
                         <h1>Otra forma</h1>
                         <p>En <strong>routes</strong></p>
                         <div class="codigo">
@@ -142,7 +142,12 @@
                         </div>
                         <!--CONTENT-->
                     </div>
-
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        CONTENT
+                    </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        CONTENT
+                    </div>
                 </div>
             </div>
 
@@ -197,11 +202,36 @@
                             <strong>@section</strong></p>
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                        CONTENT
+                        <h1>@if - @endif</h1>
+                        <p>Usar condicionales</p>
+                        <div class="codigo">
+                            <p>@if(count($alumnos)) <br>
+                              <span class="nota">codigo si es que hay alumnos</span>   <br>
+                                @else <br>
+                               <span class="nota"> codigo por si las moscas</span> <br>
+                                @endif
+                            </p>
+                        </div>
+                        <p>se usó <strong>count</strong> para saber si hay datos en el array $alumnos que se pasó por parametros</p>
+                        <h1>foreach</h1>
+                        <p>para recorrer arreglos:</p>
+                        <div class="codigo">
+                            <p>
+                                @foreach($alumnos as $persona) <br>
+                                codigo <br>
+                                @endforeach
+                            </p>
+                        </div>
+                        <p>Esto repetira el código que se ponga dentro N veces</p>
+                    
+                    
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                        CONTENT
+                       <h1>Utilizar variables</h1>
+                       <div class="codigo">{{$persona}}</div>
+                        <p>en vez de utilizar echo, podemos utilizar llaves dobles.</p>
                     </div>
+
                 </div>
             </div>
 
@@ -213,14 +243,14 @@
                     <h1>(text)comandos utiles</h1>
                     <p class="nota">Para crear el proyecto</p>
                     <p>$composer create-project laravel/laravel mi-proyecto-laravel</p>
-                 
+
                     <p class="nota">Para desplegar</p>
                     <p>$php artisan serve</p>
-                   
+
                     <p class="nota">---------------</p>
                     <p class="nota">lista de rutas</p>
                     <p>$php artisan route:list</p>
-                   
+
                     <p class="nota">crear controladores con o sin recursos</p>
                     <p>$php artisan make:controller ejemplo2</p>
                     <p>$php artisan make:controller --resource Ejemplo3</p>

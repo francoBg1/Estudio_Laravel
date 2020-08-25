@@ -134,13 +134,28 @@
                 <h1 class="titulos">Vistas</h1>
                 <div class="columns  ">
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                  <p>Las vistas se encuentran en <strong>resources/views</strong> </p>
+                        <p>Las vistas se encuentran en <strong>resources/views</strong> </p>
+                        <p>Para apuntar al controlador se usa <br>
+                            <strong>return view("paginaOvista")</strong></p>
+
+
+
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                  
+                        <p>Para comenzar, se puede crear un controlador para las vistas con metodos que apunten a las
+                            vistas <br>
+                        ej:</p>
+                        <div class="codigo">
+                            <p>public function foro(){ <br>
+                            return view('foro'); <br> }</p>
+                        </div>
+                        <p>y en <strong>routes</strong> agregamos</p>
+                        <div class="codigo">
+                            <p>Route:get('/foro/{opcional}','Controlador@foro');</p>
+                        </div>
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                
+
                     </div>
                 </div>
             </div>

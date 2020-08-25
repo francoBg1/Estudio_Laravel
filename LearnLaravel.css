@@ -46,11 +46,28 @@
     width: max-content;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
-    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
     backdrop-filter: blur(10px);
+    font-size: 14px;
+}
+.cmd {
+    background: rgba(0, 0, 0, 0.199);
+    color: rgb(255, 255, 255);
+    border: 1px dashed rgb(255, 255, 255);
+    width: max-content;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(10px);
+    font-family: monospace;
+    font-size: 14px;
+
 }
 
 strong {
@@ -131,5 +148,9 @@ height: auto;
         margin-left: auto;
         margin-right: auto;
         font-size: 12px;
+    }
+    .cmd{
+    font-size: 12px;
+    width: 99%;
     }
 }

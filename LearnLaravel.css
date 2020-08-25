@@ -86,7 +86,10 @@ height: auto;
 
 .rutas {
     background: rgb(0, 0, 0);
-    background-image: url(https://image.freepik.com/vector-gratis/fondo-particulas-tecnologia-realista-abstracta_23-2148420656.jpg);
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.459), 
+        rgba(0, 0, 0, 0.39)
+      ), url(https://image.freepik.com/vector-gratis/fondo-particulas-tecnologia-realista-abstracta_23-2148420656.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: blanchedalmond;

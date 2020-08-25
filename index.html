@@ -79,7 +79,7 @@
 
 
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-                        <h1>Está en <strong>app/http/Controllers</strong></h1>
+                        <h1>Están en <strong>app/http/Controllers</strong></h1>
                         <p>Para agregar un controlador debe ser así:</p>
                         <div class="codigo">
                             <p>namespace App\Http\Controllers <br>
@@ -91,10 +91,17 @@
                             </p>
                         </div>
                         <p>Se crea un archivo php en el directorio ya mencionado. <br>
-                        En este caso el ejemplo es para hacer un enrutamiento.</p>
+                            En este caso el ejemplo es para hacer un enrutamiento.</p>
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
-
+                        <h1>Continuando con el ejemplo...</h1>
+                        <p>El controlador se creó para enrutarlo. <br>
+                            En <strong>routes\web.php</strong> lo enrutamos así:</p>
+                            <div class="codigo">
+                                <p>Route::get('inicio','EjemploContro@inicio');</p>
+                            </div>
+                            <p>Indicamos el controlador y luego, separado de un <strong>@</strong>, <br>
+                            agregamos el metodo a ser usado</p>
                     </div>
                     <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
 

@@ -125,15 +125,33 @@
                 </div>
             </div>
 
-
-
+            <!--CONTENT-->
+            <div class="hero-section controladores     ">
+                <h1 class="titulos">Controladores con resources</h1>
+                <div class="columns  ">
+                    <div class="column is-12-fullhd is-12-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                        <h1>Otra forma</h1>
+                        <p>En <strong>routes</strong></p>
+                        <div class="codigo">
+                            <p>Route::resource("posts","controladorEjemplo");</p>
+                        </div>
+                        <p>primero creamos el nombre y despues agregamos el metodo a cuál entrar.</p>
+                      <p>Para los que tengan parametros, consultar la lista de rutas:</p>
+                        <div class="cmd">
+                            <p>$php artisan route:list</p>
+                        </div>
+                      <!--CONTENT-->
+                    </div>
+                   
+                </div>
+            </div>
 
 
 
             <div class="hero-section vistas     ">
                 <h1 class="titulos">Vistas</h1>
                 <div class="columns  ">
-                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                    <div class="column is-6-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
                         <p>Las vistas se encuentran en <strong>resources/views</strong> </p>
                         <p>Para apuntar al controlador se usa <br>
                             <strong>return view("paginaOvista")</strong></p>
@@ -141,21 +159,38 @@
 
 
                     </div>
-                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                    <div class="column is-6-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
                         <p>Para comenzar, se puede crear un controlador para las vistas con metodos que apunten a las
                             vistas <br>
-                        ej:</p>
+                            ej:</p>
                         <div class="codigo">
                             <p>public function foro(){ <br>
-                            return view('foro'); <br> }</p>
+                                return view('foro'); <br> }</p>
                         </div>
                         <p>y en <strong>routes</strong> agregamos</p>
                         <div class="codigo">
                             <p>Route:get('/foro/{opcional}','Controlador@foro');</p>
                         </div>
                     </div>
-                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
 
+                </div>
+            </div>
+
+            <div class="hero-section blade     ">
+                <h1 class="titulos">Blade</h1>
+                <div class="columns  ">
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+               <p>Al crear la plantilla en <strong>views</strong> la extención debe llevar <br> la extención <strong>blade.php</strong></p>
+           <h1>identificar la zona</h1>
+           <p>se usa <strong>@yield("identificacion")</strong> en una seccion elejida de la plantilla para ser llamado desde cualquier lado</p>        
+            
+            
+            </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                 CONTENT
+                    </div>
+                    <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+                  CONTENT
                     </div>
                 </div>
             </div>
@@ -164,7 +199,14 @@
 
 
             <div class="hero-section">
-
+                <div class="comandos">
+                    <h1>(text)comandos utiles</h1>
+                    <p>composer create-project laravel/laravel mi-proyecto-laravel</p>
+                    <p>php artisan serve</p>
+                    <p>$php artisan route:list</p>
+                    <p>$php artisan make:controller ejemplo2</p>
+                    <p>$php artisan make:controller --resource Ejemplo3</p>
+                </div>
                 <div class="foot-pag centrar-texto">
                     <p>Páginas de estudio | Franco Bernal</p>
                 </div>
@@ -181,3 +223,22 @@
 </body>
 
 </html>
+
+
+
+<!--
+<div class="hero-section controladores     ">
+    <h1 class="titulos">Controladores con resources</h1>
+    <div class="columns  ">
+        <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+     CONTENT
+        </div>
+        <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+     CONTENT
+        </div>
+        <div class="column is-4-fullhd is-4-desktop  is-12-tablet  is-12-mobile is-gapless  is-multiline">
+      CONTENT
+        </div>
+    </div>
+</div>
+-->
